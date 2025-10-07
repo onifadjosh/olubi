@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Clients - Olubi Construction</title>
+  <link rel="stylesheet" href="clients.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="client.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+  <header class="navbar glass">
+    <div class="logo">
+      <img src="./MEDIA/Logo.png" alt="Olubi Logo">
+    </div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="project.html" class="active">Portfolio</a></li>
+        <a href="contact.html" class="btn">Get in touch</a>
+      </ul>
+      
+    </nav>
+  </header>
+  <!-- HERO -->
+  <section class="hero">
+  </section>
+
+  <!-- CLIENTS SECTION -->
+  <section class="clients">
+    <h2>OUR CLIENTS & PARTNERS</h2>
+    <p>Trusted by leading institutions, government agencies, and private organizations across Nigeria.</p>
+    <div class="client-logos">
+      <img src="./MEDIA/Frame 88 (3).png" alt="Access Bank">
+      <img src="./MEDIA/Frame 89.png" alt="UBA">
+      <img src="./MEDIA/Frame 93.png" alt="FERMA">
+      <img src="./MEDIA/Frame 95.png" alt="Osun Gov">
+      <img src="./MEDIA/Frame 96.png" alt="OAU">
+      <img src="./MEDIA/Frame 97.png" alt="FMARD">
+      <img src="./MEDIA/Frame 91 (1).png" alt="Access Bank">
+      <img src="./MEDIA/Frame 94.png" alt="Access Bank">
+      <img src="./MEDIA/Frame 90.png" alt="Access Bank">
+      <img src="./MEDIA/Frame 92.png" alt="Access Bank">
+      <!-- Add the rest of your logos here -->
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <h2>TESTIMONIALS</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>“Olubi Construction delivered our project on time and with excellent quality. Their professionalism and dedication were outstanding.”</p>
+        <h4>Osun State Ministry of Works</h4>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <p>“We are impressed with their technical expertise and commitment to excellence. They remain one of our most trusted partners.”</p>
+        <h4>Federal Road Maintenance Agency (FERMA)</h4>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <p>“From design to delivery, Olubi Construction provided exceptional service and ensured our project met the highest standards.”</p>
+        <h4>Obafemi Awolowo University, Ile-Ife</h4>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <p>Join the growing list of clients who trust us with their infrastructure projects</p>
+    <a href="contact.html" class="btn">Contact Us Today</a>
+  </section>
+
+   <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-content">
+      <h3>OLUBI CONSTRUCTION</h3>
+      <p class="para">Building excellence since 2007. Your trusted partner for construction and
+        infrastructure development across Nigeria.</p>
+      <!-- <div class="icon">
+        <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-google" style="color: #ffffff;"></i>
+      </div> -->
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul style="list-style-type: circle;">
+            <li>Building & Civil Engineering Construction</li>
+            <li>Electrical & Mechanical Works</li>
+            <li>Finishing & Exterior Works</li>
+            <li>Materials & Production</li>
+            <li>Project Delivery Services</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul style="list-style-type: none;">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="client.html">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p> <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> No 43, Ifesowapo Otiotiju
+            Street<br>Oke-Oda Kelibe, Osogbo, Osun State, Nigeria.</p>
+          <p> <i class="fa-solid fa-phone" style="color: #ffffff;"></i> +2348033705861, +2348168049477</p>
+          <p> <i class="fa-solid fa-envelope" style="color: #ffffff;"></i> olubiconstructioncompany@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Olubi Construction. All rights reserved.</p>
+  </footer>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+      navMenu.classList.remove("show");
+    }
+  });
+});
+  </script>
+
+</body>
+</html>

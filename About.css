@@ -1,0 +1,373 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #EFEBF2;
+}
+
+/* Navbar Base */
+header {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 60%;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  z-index: 1000;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.753);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+}
+header nav ul li a:hover {
+  color: #3a1f47;
+  font-weight: 500;
+}
+
+header .btn {
+  padding: 20px 28px;
+  background: #211428;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+  text-decoration: none;
+}
+header .btn:hover {
+  background: #3a1f47;
+}
+
+/* Hamburger */
+.hamburger {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+/* Hero */
+.hero {
+  background: url('./MEDIA/Desktop\ -\ 15.png') center/cover no-repeat;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Sections */
+.story{
+    padding: 60px 20px;
+  max-width:80%;
+  margin: auto;
+}
+section {
+  padding: 60px 20px;
+  max-width:100%;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  color: #211428;
+  font-family: 'montserrat', sans-serif;
+}
+.story p{
+  font-size: 1.2rem;
+}
+/* Foundation */
+.foundation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.foundation-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.foundation-card img{
+  width: 50px;
+}
+
+/* Leadership */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  /* padding-bottom: 30px; */
+}
+.team-member {
+  background: #fff;
+  border-radius: 15px;
+  /* padding: 0px 0px 0px 0px; */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.team-member img {
+  width: 100%;
+  height: 300px;
+  /* max-width: 250px; */
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.team-member h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.team-member p {
+  font-size: 0.95rem;
+  color: #555;
+  padding-bottom: 20px;
+}
+
+/* Why Choose Us */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* always 3 per row */
+  gap: 20px; /* space between both rows and columns */
+}
+.why-card {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.why-card img{
+  width: 50px;
+}
+
+/* * ===== FOOTER ===== */ 
+footer {
+  background: #211428;
+  color: #fff;
+  padding: 60px 20px 20px;
+}
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-content h3{
+  font-size: 40px;
+}
+
+.footer-content .icon i{
+  padding: 20px;
+  font-size: 24px;
+}
+.footer-content .para{
+  width: 50%;
+  font-size: 1.2rem;
+}
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+.footer-col p .fa-solid{
+  margin-right: 5px;
+}
+.footer-col ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.footer-col a {
+  color: #ddd;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.footer-col a:hover {
+  color: #ffd600;
+}
+footer p {
+  font-size: 0.95rem;
+}
+footer .copyright {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.85rem;
+  color: #ccc;
+  border-top: 1px solid;
+  padding-top: 15px;
+}
+
+/* ===================== */
+/* RESPONSIVE STYLES     */
+/* ===================== */
+
+/* Tablets - 768px */
+@media (max-width: 1024px) {
+  header {
+    top: 20px;
+    left: 20px;
+    width: 92%;
+    padding: 12px 30px;
+  }
+
+  header nav ul {
+    gap: 15px;
+  }
+
+  .hero {
+    height: 320px;
+  }
+
+  .story, section {
+    padding: 50px 20px;
+    max-width: 95%;
+  }
+
+  .foundation-grid,
+  .team-grid,
+  .why-grid,
+  .footer-cols {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    gap: 20px;
+  }
+
+  .footer-content .para {
+    width: 80%;
+  }
+}
+
+/* Mobile - 768px and below */
+@media (max-width: 768px) {
+  header {
+    width: 90%;
+    left: 5%;
+    top: 20px;
+    padding: 10px 20px;
+  }
+  .logo img{
+    width: 50px;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #EFEBF2;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 20px;
+    display: none; /* hidden by default */
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+  }
+
+  nav.show {
+    display: flex; /* show when toggled */
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+  }
+  header nav ul li a{
+    color:#211428 ;
+    font-weight: 500;
+  }
+  header nav ul li a:hover{
+     color: #333;
+  }
+  header .btn {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+  header .btn:hover{
+    background-color: #fff;
+  }
+
+  .hamburger {
+    display: block; /* show on mobile */
+    width: 50px;
+  }
+  .hero {
+    height: 220px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .story, section {
+    padding: 40px 15px;
+    max-width: 100%;
+  }
+
+  .story p {
+    font-size: 1rem;
+  }
+
+  .foundation-grid,
+  .team-grid,
+  .why-grid,
+  .footer-cols {
+    grid-template-columns: 1fr; /* stack items */
+  }
+
+  .team-member img {
+    height: auto;
+  }
+
+  .footer-content .para {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .footer-content h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .footer-content .icon {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .footer-content h3 {
+    font-size: 30px;
+  }
+}
+
